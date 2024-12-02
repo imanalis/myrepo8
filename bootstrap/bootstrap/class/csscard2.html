@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Cards</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Raleway:wght@400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Raleway', serif;
+        }
+
+        h2 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 4rem;
+        }
+
+        #container {
+            min-height: 100vh;
+            background-color: #F2EBDD;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .mycard {
+            margin: 15px;
+            height: 500px;
+            width: 250px;
+            background-color: #fff;
+            border: 5px solid black;
+            box-shadow: 0 0 0 7px #fff, 0 0 8px 5px #000;
+            overflow: hidden;
+        }
+
+        .mycard-image {
+            position: relative;
+            width: 100%;
+            border-bottom: 5px solid #000;
+            background-color: #FFDD33;
+            height: 55%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mycard-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mycard-text {
+            height: 45%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .mycard-text h2, .mycard-text p {
+            text-align: center;
+        }
+
+        .mycard-text div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Specific styling for each card */
+        #hulk .mycard-image {
+            background-color: #59C887;
+        }
+
+        #hulk h2 {
+            color: #59C887;
+            letter-spacing: -2px;
+        }
+
+        #spiderman .mycard-image {
+            background-color: #5CAAB4;
+        }
+
+        #spiderman h2 {
+            color: #2E5579;
+        }
+
+        #deadpool .mycard-image {
+            background-color: #A01F29;
+        }
+
+        #deadpool .mycard-image p {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            font-weight: bold;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="row">
+            <!-- Hulk Card -->
+            <div class="col-md-4">
+                <div class="mycard" id="hulk">
+                    <div class="mycard-image">
+                        <img src="https://res.cloudinary.com/dsgvp2wmj/image/upload/v1636769866/466-4665707_hulk-png-avengers-earths-mightiest-heroes-hulk-transparent-removebg-preview_hxdclj.png" alt="Hulk">
+                    </div>
+                    <div class="mycard-text">
+                        <h2>MARVEL</h2>
+                        <p>COMICS<br>GROUP</p>
+                        <div>
+                            <div>
+                                <span>15</span>
+                                <span>&cent;</span>
+                            </div>
+                            <div>
+                                <span>27</span>
+                                <span>May</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spiderman Card -->
+            <div class="col-md-4">
+                <div class="mycard" id="spiderman">
+                    <div class="mycard-image">
+                        <img src="https://pngimg.com/uploads/spider_man/spider_man_PNG59.png" alt="Spiderman">
+                    </div>
+                    <div class="mycard-text">
+                        <h2>MARVEL</h2>
+                        <div>
+                            <div>
+                                <span>COMICS</span>
+                                <span>GROUP</span>
+                            </div>
+                            <div>
+                                <span>12</span>
+                                <span>&cent;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deadpool Card -->
+            <div class="col-md-4">
+                <div class="mycard" id="deadpool">
+                    <div class="mycard-image">
+                        <p>&copy; 1979 Marvel <br>Comics Group</p>
+                        <img src="https://www.pngkey.com/png/full/82-824923_deadpool-deadpool-marvel-comics.png" alt="Deadpool">
+                    </div><div class="mycard-text">
+                        <h2>MARVEL</h2>
+                        <div>
+                            <div>
+                                <span>COMICS</span>
+                                <span>GROUP</span>
+                            </div>
+                    
+                            <span>40</span>
+                            <span>&cent;</span>
+                        </div>
+                        <div>
+                            <span>29</span>
+                            <span>JAN</span>
+                            <span>02461</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>
